@@ -1,63 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | The Third Eye</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet"href="style.css">
 </head>
-
 <body>
     <header>
-        <a href="#">
-        <img src="eye.png" class="logo">
-        </a>
-    
-    <nav class="navigation">
-        <a href="#">Home<span></span></a>
-        <a href="#">About<span></span></a>
-        <a href="#">Services<span></span></a>
-        <a href="#">Contact<span></span></a>
-    </nav>
-</header>
-<section class="parallax">
-    <h2 id="text">The Third Eye</h2>
-    <img src="gate-left.png" id="gate-left">
-    <img src="gate-right.png" id="gate-right">
-    
-</section>
-<section class="sec">
-    <img src="eye.png"  id="eye">
-    <h2>The Third Eye</h2>
-    <p>
-        Artificial Intelligence (AI) is a rapidly advancing field within the realm of technology that focuses
-        on creating intelligent machines capable of performing tasks that typically require human intelligence. It encompasses
-        a wide range of disciplines, including computer science, mathematics, cognitive science, and more.<br><br><br>
+        <h2 class="logo">Logo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <button class="btnLogin-popup">Login</button>
+        </nav>
+    </header>
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+    <div class="form-box login">
+        <h2>Login</h2>
+        <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email"required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                <input type="Password"required>
+                <label>Passsword</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot Passsword?</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="login-register">
+                <p>Don't have an account?<a href="#"class="register-link">Register</a></p>
+            </div>
+        </form>
+    </div>
 
-        At its core, AI aims to develop algorithms and systems that can exhibit traits such as learning, reasoning,
-        problem-solving, perception, and language understanding. These capabilities enable AI to analyze 
-        vast amounts of data, recognize patterns, make predictions, and automate complex processes with remarkable accuracy and efficiency.<br><br><br>
+    <div class="form-box register">
+        <h2>Registration</h2>
+        <form action="#">
 
-        There are two primary types of AI: Narrow AI and General AI.
-        Narrow AI, also known as Weak AI, is designed to excel at specific tasks, such as image recognition,
-        natural language processing, or playing chess. These systems are trained on large datasets and employ
-        specialized algorithms to accomplish their designated tasks effectively.<br><br><br>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <input type="text"required>
+                <label>Usernames</label>
+            </div>
 
-        On the other hand, General AI, also referred to as Strong AI or Artificial General Intelligence (AGI),
-        aims to replicate human-level intelligence across a broad range of tasks. AGI systems would possess the ability to
-        understand, learn, and apply knowledge in a manner similar to human cognition. While General AI remains an ambitious goal,
-        it has yet to be fully realized and is the subject of ongoing research.<br><br><br>
-
-        AI finds applications in various domains, revolutionizing industries such as healthcare,
-        finance, transportation, manufacturing, and entertainment. For example, AI algorithms can
-        assist doctors in diagnosing diseases more accurately, optimize financial portfolios, drive autonomous 
-        vehicles, improve production efficiency in factories, and enhance personalized recommendations in streaming services.<br><br><br>
-    </p>`
-</section>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                <input type="email"required>
+                <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock"></ion-icon></span>
+                <input type="Password"required>
+                <label>Passsword</label>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">I agree to the term & conditions</label>
+               
+            </div>
+            <button type="submit" class="btn">Register</button>
+            <div class="login-register">
+                <p>Already have an account?<a href="#"class="login-link">Login</a></p>
+            </div>
+        </form>
+    </div>
+    </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
 </body>
-
 </html>
